@@ -22,7 +22,7 @@
 | `refund_amount_correct` | năng lực (outcome) | `≥ 0.95` và không giảm có ý nghĩa | **có** | `0.9857` | `1.0` (`Δ +0.014 CI [+0.000, +0.043]`, `ok`) | `0.8571` (`Δ -0.129 CI [-0.286, +0.000]`, **BLOCK**) |
 | `pass_rate` | năng lực (outcome) | `≥ 0.85` và không giảm có ý nghĩa | **có** | `0.9857` | `1.0` (`Δ +0.014 CI [+0.000, +0.043]`, `ok`) | `0.7143` (`Δ -0.271 CI [-0.500, -0.057]`, **BLOCK**) |
 | `db_fact_kept` | năng lực (mức bước) | `≥ 0.95` | **không** (warn) | `0.9857` | `1.0` (`ok`) | `0.9286` (`warn`) |
-| `pass_5`, `cost_per_success` | theo dõi (outcome / system) | `pass_5 ≥ 0.80`; `cost max_increase: 0.10` | **không** (warn) | `0.9286` / `49.2809` | `1.0` / `48.7157` (`ok`) | `0.7143` / `81.202` (`warn`) |
+| `pass_5`, `cost_per_success` | theo dõi (outcome / system) | `pass_5 ≥ 0.80`; `cost max_increase: 0.10` | **không** (warn) | `0.9286` / `49.567` | `1.0` / `48.7157` (`ok`) | `0.7143` / `81.202` (`warn`) |
 | `reply_matches_ledger` (bắt `FM-08`) | năng lực (outcome) | `≥ 0.98` và không giảm có ý nghĩa | **có** | `1.0` | `1.0` (`Δ +0.000 CI [+0.000, +0.000]`, `ok`) | `0.7857` (`Δ -0.214 CI [-0.429, +0.000]`, **BLOCK**) |
 
 "Giảm có ý nghĩa" = CI 95% paired bootstrap (`n_resamples=1000, rng=2027, method="percentile"`) của $\Delta = \text{PR} - \text{baseline}$ nằm hoàn toàn dưới 0 ($\text{hi} < 0$).

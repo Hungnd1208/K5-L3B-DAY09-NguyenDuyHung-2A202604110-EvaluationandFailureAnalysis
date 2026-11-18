@@ -29,7 +29,7 @@ Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10.
 | `pass_rate` | `min: 0.85`, CI ≥ 0 | `0.9857` | `1.0` | `Δ +0.014 CI [+0.000, +0.043]` (`ok`) | `0.7143` | `Δ -0.271 CI [-0.500, -0.057]` (**BLOCK**) | Chặn `seeded_regression` |
 | `reply_matches_ledger` | `min: 0.98`, CI ≥ 0 | `1.0` | `1.0` | `Δ +0.000 CI [+0.000, +0.000]` (`ok`) | `0.7857` | `Δ -0.214 CI [-0.429, +0.000]` (**BLOCK**) | Chặn `seeded_regression` |
 | `pass_5` | `min: 0.80` (warn) | `0.9286` | `1.0` | — (`ok`) | `0.7143` | — (`warn`) | — |
-| `cost_per_success` | `max_increase: 0.10` (warn) | `49.2809` | `48.7157` | — (`ok`) | `81.202` | — (`warn`) | — |
+| `cost_per_success` | `max_increase: 0.10` (warn) | `49.567` | `48.7157` | — (`ok`) | `81.202` | — (`warn`) | — |
 
 - **Judge:**
   - `tone_ok` (`data/eval/judge_tone_public.csv`, $n = 100$): $\kappa = 0.757 \ge 0.6$, $P = 0.857 \ge 0.8$, $R = 0.800 \ge 0.7$, confusion `{'tp': 24, 'fp': 4, 'fn': 6, 'tn': 66}`, observed fail rate `0.280` $\rightarrow$ Rogan-Gladen corrected fail rate **`0.300`** $\Rightarrow$ **PASS floors (dùng được)**.
